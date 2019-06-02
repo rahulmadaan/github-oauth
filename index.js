@@ -7,7 +7,7 @@ const getAndSetClientId = link => {
 const setClientId = clientId => {
   const link = `https://github.com/login/oauth/authorize?client_id=${clientId}`;
   const button = document.getElementById("btn");
-  const text = button.innerText;
+  const text = button.innerHTML;
   button.innerHTML = `<a href = ${link}> ${text} </a>`;
 };
 
